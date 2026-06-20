@@ -7,16 +7,8 @@ set(CMAKE_CXX_STANDARD 20)
 include_directories(include)
 
 add_executable(Snake
-    source/main.cpp
-    source/Program.cpp
-    source/Menu.cpp
-    source/Game.cpp
-    source/Scores.cpp
-    source/Exit.cpp
-    source/Font.cpp
-    source/Draw.cpp
-    source/RandNum.cpp
-    source/Sound.cpp
+    src/main.cpp
+    src/Main/Main.cpp
 )
 
 find_package(SFML 3 COMPONENTS Graphics Window System Audio REQUIRED)
