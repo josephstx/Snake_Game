@@ -1,7 +1,7 @@
-#include <Main/Main.hpp>
+#include <Main/Game.hpp>
 
 int main() {
-    Main mn = Main();
+    Game mn = Game();
     mn.run();
     return 0;
 }

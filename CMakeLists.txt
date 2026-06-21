@@ -8,7 +8,9 @@ include_directories(include)
 
 add_executable(Snake
     src/main.cpp
-    src/Main/Main.cpp
+    src/Main/Game.cpp
+    src/Main/Window.cpp
+    src/Main/InputStream.cpp
 )
 
 find_package(SFML 3 COMPONENTS Graphics Window System Audio REQUIRED)
