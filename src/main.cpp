@@ -2,5 +2,6 @@
 
 int main() {
     Main mn = Main();
+    mn.run();
     return 0;
 }
