@@ -1,6 +1,6 @@
 #include <Main/Game.hpp>
 
-Game::Game() : window(800, 600, "Snake"), input(window) {}
+Game::Game() : window(800, 600, "Snake"), sceneManager(window), input(window, sceneManager) {}
 
 void Game::run() {
     while(this->window.isOpen()) {
