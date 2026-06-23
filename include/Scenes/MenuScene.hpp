@@ -10,4 +10,8 @@ class MenuScene : public Scene {
 
     public:
         MenuScene(Window& w);
+
+        void update() override;
+        void draw() override;
+        void getEvent(sf::Event) override;
 };

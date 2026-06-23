@@ -1,7 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include <Main/Window.hpp>
-#include <Main/InputStream.hpp>
+
+class Window;
 
 enum class TypeScene {
     Menu,
@@ -18,7 +18,7 @@ class Scene {
     public:
         Scene(Window& w);
 
-        virtual void update();
-        virtual void draw();
-        virtual void getEvent(std::optional<sf::Event>);
+        virtual void update() = 0;
+        virtual void draw() = 0;
+        virtual void getEvent(sf::Event) = 0;
 };

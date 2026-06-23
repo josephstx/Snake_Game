@@ -7,7 +7,7 @@ void Game::run() {
         input.startEvent();
 
         window.begin();
-        window.drawPixel(10.f, 10.f, sf::Color::Red, 20.f);
+        sceneManager.updateCurrentScene();
         window.end();
     }
 }

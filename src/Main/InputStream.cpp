@@ -1,4 +1,6 @@
 #include <Main/InputStream.hpp>
+#include <Main/SceneManager.hpp>
+#include <Main/Window.hpp>
 
 InputStream::InputStream(Window& w, SceneManager& s) : window(w), sceneManager(s) {}
 

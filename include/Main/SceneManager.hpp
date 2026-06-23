@@ -1,7 +1,8 @@
 #pragma once
-#include <Main/Window.hpp>
-#include <Scenes/Scene.hpp>
-#include <Scenes/MenuScene.hpp>
+#include <SFML/Graphics.hpp>
+
+class Window;
+class Scene;
 
 class SceneManager {
     private:
@@ -10,4 +11,7 @@ class SceneManager {
     
     public:
         SceneManager(Window& w);
+
+        void updateCurrentScene();
+        void getCurrentEvent(sf::Event event);
 };

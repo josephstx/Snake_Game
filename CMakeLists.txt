@@ -11,6 +11,9 @@ add_executable(Snake
     src/Main/Game.cpp
     src/Main/Window.cpp
     src/Main/InputStream.cpp
+    src/Main/SceneManager.cpp
+    src/Scenes/Scene.cpp
+    src/Scenes/MenuScene.cpp
 )
 
 find_package(SFML 3 COMPONENTS Graphics Window System Audio REQUIRED)

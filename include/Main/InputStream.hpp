@@ -1,7 +1,7 @@
 #pragma once
-#include <SFML/Graphics.hpp>
-#include <Main/Window.hpp>
-#include <Main/SceneManager.hpp>
+
+class Window;
+class SceneManager;
 
 class InputStream {
     private:
